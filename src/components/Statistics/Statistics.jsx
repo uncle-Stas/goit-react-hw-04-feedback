@@ -1,5 +1,7 @@
 import css from './Statistics.module.css';
 
+import PropTypes from 'prop-types';
+
 const Statistics = ({ dataStats, options, total, positivePercentage }) => {
   return (
     <ul className={css.statsList}>
@@ -19,3 +21,12 @@ const Statistics = ({ dataStats, options, total, positivePercentage }) => {
 };
 
 export default Statistics;
+
+// ------------------ PropTypes -------------------------
+
+Statistics.propTypes = {
+  dataStats: PropTypes.object.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string.isRequired),
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
+};
