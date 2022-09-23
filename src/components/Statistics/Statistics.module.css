@@ -1,0 +1,8 @@
+.statsItem {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.statsItem:not(:last-child) {
+  margin-bottom: 10px;
+}
