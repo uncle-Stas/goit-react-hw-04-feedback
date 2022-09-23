@@ -1,22 +1,25 @@
 .btnWrapper {
+  margin-left: 20px;
   display: flex;
   gap: 15px;
 }
 
 .feedbackBtn {
   padding: 3px 10px;
-  background-color: #f0ffff;
+  background-color: #f1f7fc;
   font-weight: 700;
   text-transform: capitalize;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.6),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: background-color linear 300ms, box-shadow linear 100ms;
+  transition: background-color linear 300ms, box-shadow linear 100ms,
+    color linear 300ms;
 }
 
 .feedbackBtn:hover,
 .feedbackBtn:focus {
-  background-color: #ffebcd;
+  background-color: #7660ad;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .feedbackBtn:active {

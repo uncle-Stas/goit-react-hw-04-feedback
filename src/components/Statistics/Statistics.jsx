@@ -2,7 +2,7 @@ import css from './Statistics.module.css';
 
 const Statistics = ({ dataStats, options, total, positivePercentage }) => {
   return (
-    <ul>
+    <ul className={css.statsList}>
       {options.map(option => {
         return (
           <li key={option} className={css.statsItem}>
